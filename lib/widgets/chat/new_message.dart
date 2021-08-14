@@ -19,7 +19,8 @@ class _NewMessageState extends State<NewMessage> {
       'text': _messageContoller.value.text.trim(),
       'createdAt': Timestamp.now(),
       'uid': user.uid,
-      'username': userData['username']
+      'username': userData['username'],
+      'userImage': userData['imageUrl'],
     });
 
     _messageContoller.clear();
